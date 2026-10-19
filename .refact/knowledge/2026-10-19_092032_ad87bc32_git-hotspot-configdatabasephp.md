@@ -1,14 +1,14 @@
 ---
-id: "a9972f48-3b42-4e3a-96d2-bee1617c88ce"
+id: "97375d82-a529-4992-ad48-bd5e10f0f05f"
 title: "Git hotspot: config/database.php"
 kind: code
-created: 2026-10-11
-updated: 2026-10-11
-review_after: 2026-11-10
+created: 2026-10-19
+updated: 2026-10-19
+review_after: 2026-11-18
 status: proposed
 tags: ["code", "git", "hotspot"]
 filenames: ["config/database.php"]
-created_at: "2026-10-11T19:14:46.743812400+00:00"
+created_at: "2026-10-19T06:20:32.732857400+00:00"
 content_hash: "038037bc9cc3e3d15fdc13be7843a2aea133e4b6bee9f022152803fb3660c053"
 source_tool: "buddy_memory_lifecycle:git"
 source_confidence: 0.740
