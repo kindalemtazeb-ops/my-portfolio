@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" fill="none">
+  <defs>
+    <linearGradient id="background" x1="30" y1="30" x2="1160" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#153A4D"/>
+      <stop offset="1" stop-color="#11172D"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="620" y1="130" x2="930" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#202C4A"/>
+      <stop offset="1" stop-color="#151D33"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#background)" d="M0 0h1200v640H0z"/>
+  <circle cx="170" cy="50" r="220" fill="#26C8D7" fill-opacity=".08"/>
+  <circle cx="1080" cy="610" r="240" fill="#846AF8" fill-opacity=".08"/>
+  <rect x="76" y="46" width="1048" height="548" rx="22" fill="#0D1424" stroke="#DDE8FF" stroke-opacity=".18"/>
+  <path d="M76 104h1048" stroke="#DDE8FF" stroke-opacity=".12"/>
+  <circle cx="104" cy="75" r="6" fill="#EF827E"/>
+  <circle cx="125" cy="75" r="6" fill="#EEC577"/>
+  <circle cx="146" cy="75" r="6" fill="#65C99A"/>
+  <rect x="332" y="67" width="536" height="20" rx="10" fill="#1B263B"/>
+  <text x="559" y="81" fill="#AEBBD2" font-family="Arial,sans-serif" font-size="9">modern-calculator</text>
+  <text x="144" y="221" fill="#94A5C3" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">A LITTLE TOOL FOR EVERYDAY MATH</text>
+  <text x="144" y="274" fill="#F2F5FF" font-family="Arial,sans-serif" font-size="40" font-weight="700">Modern Calculator</text>
+  <text x="144" y="309" fill="#A4B1CA" font-family="Arial,sans-serif" font-size="14">A clean interface, familiar controls,</text>
+  <text x="144" y="333" fill="#A4B1CA" font-family="Arial,sans-serif" font-size="14">and quick calculations.</text>
+  <rect x="144" y="369" width="106" height="4" rx="2" fill="#51D4D5"/>
+  <g font-family="Arial,sans-serif" font-size="10" font-weight="600">
+    <rect x="144" y="407" width="74" height="27" rx="13.5" fill="#1A3041" stroke="#58CEDA" stroke-opacity=".2"/>
+    <text x="163" y="425" fill="#BCECF0">HTML5</text>
+    <rect x="229" y="407" width="66" height="27" rx="13.5" fill="#1A3041" stroke="#58CEDA" stroke-opacity=".2"/>
+    <text x="247" y="425" fill="#BCECF0">CSS3</text>
+    <rect x="306" y="407" width="101" height="27" rx="13.5" fill="#1A3041" stroke="#58CEDA" stroke-opacity=".2"/>
+    <text x="323" y="425" fill="#BCECF0">JavaScript</text>
+  </g>
+  <rect x="640" y="128" width="330" height="420" rx="25" fill="url(#screen)" stroke="#D9E5FF" stroke-opacity=".18"/>
+  <rect x="662" y="151" width="286" height="100" rx="15" fill="#111A2D"/>
+  <text x="686" y="183" fill="#8494B1" font-family="Arial,sans-serif" font-size="12">128 × 4</text>
+  <text x="686" y="228" fill="#F4F6FF" font-family="Arial,sans-serif" font-size="32" font-weight="700">512</text>
+  <g font-family="Arial,sans-serif" font-size="16" font-weight="700">
+    <rect x="662" y="269" width="64" height="55" rx="12" fill="#283653"/><text x="686" y="304" fill="#C5D2EA">AC</text>
+    <rect x="736" y="269" width="64" height="55" rx="12" fill="#283653"/><text x="760" y="304" fill="#C5D2EA">±</text>
+    <rect x="810" y="269" width="64" height="55" rx="12" fill="#283653"/><text x="834" y="304" fill="#C5D2EA">%</text>
+    <rect x="884" y="269" width="64" height="55" rx="12" fill="#2C5D70"/><text x="908" y="304" fill="#96E5EB">÷</text>
+    <rect x="662" y="336" width="64" height="55" rx="12" fill="#202C45"/><text x="686" y="371" fill="#E4EAF6">7</text>
+    <rect x="736" y="336" width="64" height="55" rx="12" fill="#202C45"/><text x="760" y="371" fill="#E4EAF6">8</text>
+    <rect x="810" y="336" width="64" height="55" rx="12" fill="#202C45"/><text x="834" y="371" fill="#E4EAF6">9</text>
+    <rect x="884" y="336" width="64" height="55" rx="12" fill="#2C5D70"/><text x="908" y="371" fill="#96E5EB">×</text>
+    <rect x="662" y="403" width="64" height="55" rx="12" fill="#202C45"/><text x="686" y="438" fill="#E4EAF6">4</text>
+    <rect x="736" y="403" width="64" height="55" rx="12" fill="#202C45"/><text x="760" y="438" fill="#E4EAF6">5</text>
+    <rect x="810" y="403" width="64" height="55" rx="12" fill="#202C45"/><text x="834" y="438" fill="#E4EAF6">6</text>
+    <rect x="884" y="403" width="64" height="55" rx="12" fill="#2C5D70"/><text x="908" y="438" fill="#96E5EB">−</text>
+    <rect x="662" y="470" width="64" height="55" rx="12" fill="#202C45"/><text x="686" y="505" fill="#E4EAF6">1</text>
+    <rect x="736" y="470" width="64" height="55" rx="12" fill="#202C45"/><text x="760" y="505" fill="#E4EAF6">2</text>
+    <rect x="810" y="470" width="64" height="55" rx="12" fill="#202C45"/><text x="834" y="505" fill="#E4EAF6">3</text>
+    <rect x="884" y="470" width="64" height="55" rx="12" fill="#2C5D70"/><text x="908" y="505" fill="#96E5EB">+</text>
+  </g>
+</svg>

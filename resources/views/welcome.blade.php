@@ -64,7 +64,10 @@
                 <div class="hero-copy order-1">
                     <p class="hero-eyebrow"><span></span> COMPUTER SCIENCE STUDENT <span class="hero-eyebrow-separator">·</span> WEB DEVELOPER</p>
                     <h1 class="hero-title">Hi, I'm <span class="hero-name-accent">Kindalem Tazeb</span></h1>
-                    <h2 class="hero-role">Full-Stack Web Developer <span class="hero-role-divider">|</span> Debark University</h2>
+                    <h2 class="hero-role" x-data="{ roles: ['Full-Stack Web Developer', 'Laravel & PHP Developer', 'Computer Science Student'], activeRole: 0, init() { if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return; setInterval(() => this.activeRole = (this.activeRole + 1) % this.roles.length, 2800) } }">
+                        <span x-text="roles[activeRole]">Full-Stack Web Developer</span><span class="role-cursor" aria-hidden="true"></span>
+                        <span class="hero-role-divider">|</span> Debark University
+                    </h2>
                     <p class="hero-description">
                         I'm a third-year Computer Science student at <strong>Debark University</strong> in Ethiopia, focused on building practical web applications with <strong>PHP, Laravel, Vue.js, MySQL, and Tailwind CSS</strong>.
                     </p>
@@ -85,6 +88,12 @@
                         <span class="social-divider"></span>
                         <span><i class="fas fa-location-dot"></i> Debark, Ethiopia</span>
                     </div>
+
+                    <div class="hero-stats" aria-label="Profile highlights">
+                        <div class="hero-stat"><strong>17</strong><span>Repositories</span></div>
+                        <div class="hero-stat"><strong>144</strong><span>GitHub stars</span></div>
+                        <div class="hero-stat"><strong>03</strong><span>Year CS student</span></div>
+                    </div>
                 </div>
 
                 <div class="hero-visual order-2">
@@ -96,6 +105,15 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="tech-ribbon" aria-label="Technologies and tools">
+            <div class="tech-ribbon-track">
+                <span class="toolbelt-label">TECH I BUILD WITH</span>
+                <span>PHP</span><span>Laravel</span><span>MySQL</span><span>JavaScript</span><span>Vue.js</span><span>Tailwind CSS</span><span>HTML5</span><span>CSS3</span><span>Node.js</span><span>Composer</span><span>XAMPP</span><span>Git &amp; GitHub</span><span>Postman</span><span>VS Code</span>
+                <span class="toolbelt-label" aria-hidden="true">TECH I BUILD WITH</span>
+                <span aria-hidden="true">PHP</span><span aria-hidden="true">Laravel</span><span aria-hidden="true">MySQL</span><span aria-hidden="true">JavaScript</span><span aria-hidden="true">Vue.js</span><span aria-hidden="true">Tailwind CSS</span><span aria-hidden="true">HTML5</span><span aria-hidden="true">CSS3</span><span aria-hidden="true">Node.js</span><span aria-hidden="true">Composer</span><span aria-hidden="true">XAMPP</span><span aria-hidden="true">Git &amp; GitHub</span><span aria-hidden="true">Postman</span><span aria-hidden="true">VS Code</span>
             </div>
         </section>
 
@@ -165,11 +183,29 @@
             </div>
         </section>
 
+        <section class="featured-project-section section-shell">
+            <div class="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28">
+                <div class="featured-project-card">
+                    <div class="featured-project-copy">
+                        <p class="section-index">03 / FEATURED BUILD</p>
+                        <p class="featured-project-label"><span class="status-dot"></span> E-COMMERCE · ETHIOPIAN MARKETPLACE</p>
+                        <h2 class="section-title">HabeshaCart<br><span>Shop local. Shop better.</span></h2>
+                        <p class="body-copy">A Laravel-powered marketplace connecting shoppers and vendors, with product discovery, a shopping cart, wishlists, order management, and Telebirr payments.</p>
+                        <div class="project-tags"><span>Laravel</span><span>PHP</span><span>Blade</span><span>Alpine.js</span></div>
+                        <a class="button-primary featured-project-link" href="https://github.com/kindalemtazeb-ops/laravel-ecommerce" target="_blank" rel="noopener noreferrer">View source on GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <a class="featured-project-art" href="https://github.com/kindalemtazeb-ops/laravel-ecommerce" target="_blank" rel="noopener noreferrer" aria-label="View HabeshaCart source on GitHub">
+                        <img src="{{ asset('images/projects/habeshacart-preview.svg') }}" alt="HabeshaCart Ethiopian marketplace storefront preview" loading="lazy" decoding="async">
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <section id="skills" class="skills-section" x-data="{ category: 'all' }">
             <div class="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
                 <div class="section-heading-row">
                     <div>
-                        <p class="section-index">03 / TECHNICAL ARSENAL</p>
+                        <p class="section-index">04 / TECHNICAL ARSENAL</p>
                         <h2 class="section-title">Skills & <span>expertise.</span></h2>
                     </div>
                     <p class="section-aside">The tools and technologies I use to build<br class="hidden sm:block"> practical, full-stack web applications.</p>
@@ -211,7 +247,7 @@
                         <h3>Databases & tools</h3>
                         <p>Working with relational data and the tools used throughout development.</p>
                         <div class="skill-tags">
-                            <span>MySQL</span><span>Git & GitHub</span><span>Composer</span><span>VS Code</span><span>Node.js</span><span>Postman</span>
+                            <span>MySQL</span><span>Git & GitHub</span><span>Composer</span><span>VS Code</span><span>Node.js</span><span>Postman</span><span>XAMPP</span>
                         </div>
                     </article>
                 </div>
@@ -222,7 +258,7 @@
             <div class="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
                 <div class="section-heading-row">
                     <div>
-                        <p class="section-index">04 / HOW I WORK</p>
+                        <p class="section-index">05 / HOW I WORK</p>
                         <h2 class="section-title">A thoughtful way<br><span>to build.</span></h2>
                     </div>
                     <p class="section-aside">A simple process keeps each project focused,<br class="hidden sm:block"> understandable, and moving forward.</p>
@@ -266,7 +302,7 @@
             <div class="contact-glow"></div>
             <div class="relative mx-auto grid max-w-7xl gap-14 px-6 py-24 lg:grid-cols-[.9fr_1.1fr] lg:px-10 lg:py-32">
                 <div class="contact-copy">
-                    <p class="section-index">06 / YOUR TURN</p>
+                    <p class="section-index">07 / YOUR TURN</p>
                     <h2 class="section-title">Have an idea?<br><span>Let's build it.</span></h2>
                     <p class="body-copy">Have a project in mind, an internship opportunity, or just want to talk tech? Send me a message. I'd love to hear from you.</p>
                     <div class="contact-links">

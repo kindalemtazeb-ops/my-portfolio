@@ -6,12 +6,25 @@ const filters = [
     { label: 'Backend', value: 'backend' },
     { label: 'Education', value: 'education' },
     { label: 'Portfolio', value: 'portfolio' },
+    { label: 'Learning', value: 'learning' },
+    { label: 'Tools', value: 'tools' },
     { label: 'E-commerce', value: 'ecommerce' },
 ];
 
 const projects = [
     {
         number: '01',
+        title: 'HabeshaCart',
+        category: 'ecommerce',
+        categoryLabel: 'E-COMMERCE / ETHIOPIAN MARKETPLACE',
+        image: '/images/projects/habeshacart-preview.svg',
+        imageAlt: 'HabeshaCart Ethiopian marketplace storefront preview',
+        description: 'A Laravel-powered marketplace connecting shoppers and vendors, with product discovery, a shopping cart, wishlists, order management, and Telebirr payments.',
+        technologies: ['Laravel', 'PHP', 'Blade', 'Alpine.js'],
+        repository: 'https://github.com/kindalemtazeb-ops/laravel-ecommerce',
+    },
+    {
+        number: '02',
         title: 'Banking Management System',
         category: 'backend',
         categoryLabel: 'BANKING / FINTECH',
@@ -22,7 +35,7 @@ const projects = [
         repository: 'https://github.com/kindalemtazeb-ops/ADWA_BANK',
     },
     {
-        number: '02',
+        number: '03',
         title: 'Student Registration System',
         category: 'education',
         categoryLabel: 'EDUCATION / MANAGEMENT',
@@ -33,7 +46,7 @@ const projects = [
         repository: 'https://github.com/kindalemtazeb-ops/kindalemtazeb-ops-student_registration',
     },
     {
-        number: '03',
+        number: '04',
         title: 'Personal Portfolio',
         category: 'portfolio',
         categoryLabel: 'WEB / PERSONAL BRAND',
@@ -44,15 +57,26 @@ const projects = [
         repository: 'https://github.com/kindalemtazeb-ops/my-portfolio',
     },
     {
-        number: '04',
-        title: 'E-Commerce Store',
-        category: 'ecommerce',
-        categoryLabel: 'E-COMMERCE / COMING SOON',
-        image: '/images/projects/storefront-preview.svg',
-        imageAlt: 'Illustrated concept for an upcoming online store',
-        description: 'A planned online shopping experience focused on clear product browsing, a useful shopping cart, and a straightforward checkout. The project is still in development.',
-        technologies: ['Laravel', 'MySQL', 'Tailwind CSS'],
-        comingSoon: true,
+        number: '05',
+        title: 'Learn Laravel',
+        category: 'learning',
+        categoryLabel: 'LEARNING / LARAVEL',
+        image: '/images/projects/laravel-learning-preview.svg',
+        imageAlt: 'Illustrated Laravel learning project preview',
+        description: 'A hands-on repository for learning Laravel and practicing the building blocks of backend web development.',
+        technologies: ['Laravel', 'PHP'],
+        repository: 'https://github.com/kindalemtazeb-ops/learn_laravel',
+    },
+    {
+        number: '06',
+        title: 'Modern Calculator',
+        category: 'tools',
+        categoryLabel: 'TOOLS / FRONT-END',
+        image: '/images/projects/calculator-preview.svg',
+        imageAlt: 'Illustrated modern calculator project preview',
+        description: 'A compact calculator project focused on a clear interface and everyday calculations.',
+        technologies: ['HTML5', 'CSS3', 'JavaScript'],
+        repository: 'https://github.com/kindalemtazeb-ops/modern-calculator',
     },
 ];
 
@@ -70,7 +94,7 @@ const visibleProjects = computed(() => {
     <div class="project-showcase" v-cloak>
         <div class="section-heading-row">
             <div>
-                <p class="section-index">05 / SELECTED WORK</p>
+                <p class="section-index">06 / SELECTED WORK</p>
                 <h2 class="section-title">Selected projects<span>.</span></h2>
                 <p class="showcase-intro">A few practical ideas I've turned into working software.</p>
             </div>
