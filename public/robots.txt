@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://my-portfolio-9zdm.vercel.app/sitemap.xml
+Sitemap: https://my-portfolio-c23x-cyan.vercel.app/sitemap.xml

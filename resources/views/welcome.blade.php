@@ -8,28 +8,28 @@
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="author" content="Kindalem Tazeb">
     <meta name="keywords" content="Kindalem Tazeb, full-stack developer Ethiopia, Laravel developer, PHP developer, Debark University, HabeshaCart">
-    <link rel="canonical" href="https://my-portfolio-9zdm.vercel.app/">
+    <link rel="canonical" href="https://my-portfolio-c23x-cyan.vercel.app/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_ET">
     <meta property="og:site_name" content="Kindalem Tazeb">
     <meta property="og:title" content="Kindalem Tazeb | Full-Stack Web Developer">
     <meta property="og:description" content="Computer Science student and full-stack developer building practical web applications in Ethiopia.">
-    <meta property="og:url" content="https://my-portfolio-9zdm.vercel.app/">
-    <meta property="og:image" content="https://my-portfolio-9zdm.vercel.app/images/newportfolio.jpg">
+    <meta property="og:url" content="https://my-portfolio-c23x-cyan.vercel.app/">
+    <meta property="og:image" content="https://my-portfolio-c23x-cyan.vercel.app/images/newportfolio.jpg">
     <meta property="og:image:alt" content="Kindalem Tazeb, Computer Science student and web developer">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Kindalem Tazeb | Full-Stack Web Developer">
     <meta name="twitter:description" content="Computer Science student and full-stack developer building practical web applications in Ethiopia.">
-    <meta name="twitter:image" content="https://my-portfolio-9zdm.vercel.app/images/newportfolio.jpg">
-    <link rel="sitemap" type="application/xml" href="https://my-portfolio-9zdm.vercel.app/sitemap.xml">
+    <meta name="twitter:image" content="https://my-portfolio-c23x-cyan.vercel.app/images/newportfolio.jpg">
+    <link rel="sitemap" type="application/xml" href="https://my-portfolio-c23x-cyan.vercel.app/sitemap.xml">
     <title>Kindalem Tazeb | Full-Stack Developer</title>
     <script type="application/ld+json">
         {
             "@@context": "https://schema.org",
             "@@type": "Person",
             "name": "Kindalem Tazeb",
-            "url": "https://my-portfolio-9zdm.vercel.app/",
-            "image": "https://my-portfolio-9zdm.vercel.app/images/newportfolio.jpg",
+            "url": "https://my-portfolio-c23x-cyan.vercel.app/",
+            "image": "https://my-portfolio-c23x-cyan.vercel.app/images/newportfolio.jpg",
             "jobTitle": "Full-Stack Web Developer",
             "alumniOf": {
                 "@@type": "CollegeOrUniversity",
