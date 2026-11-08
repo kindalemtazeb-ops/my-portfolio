@@ -22,6 +22,12 @@ putenv('LARAVEL_STORAGE_PATH=/tmp/storage');
 putenv('VIEW_COMPILED_PATH=/tmp/storage/framework/views');
 putenv('SESSION_DRIVER=file');
 putenv('CACHE_STORE=file');
+$_ENV['LOG_CHANNEL'] = 'stderr';
+$_SERVER['LOG_CHANNEL'] = 'stderr';
+putenv('LOG_CHANNEL=stderr');
+$_ENV['LOG_LEVEL'] = 'error';
+$_SERVER['LOG_LEVEL'] = 'error';
+putenv('LOG_LEVEL=error');
 
 // Forward requests to Laravel's public/index.php
 require __DIR__ . '/../public/index.php';
