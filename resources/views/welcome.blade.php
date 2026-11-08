@@ -4,8 +4,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#080b17">
-    <meta name="description" content="Meet Kindalem Tazeb, a third-year Computer Science student at Debark University and aspiring full-stack web developer from Ethiopia. Explore projects built with PHP, Laravel, MySQL, JavaScript, and Tailwind CSS.">
+    <meta name="description" content="Kindalem Tazeb is a Computer Science student and full-stack web developer in Ethiopia, building useful applications with Laravel, PHP, Vue.js, MySQL, and JavaScript.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Kindalem Tazeb">
+    <meta name="keywords" content="Kindalem Tazeb, full-stack developer Ethiopia, Laravel developer, PHP developer, Debark University, HabeshaCart">
+    <link rel="canonical" href="https://my-portfolio-9zdm.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_ET">
+    <meta property="og:site_name" content="Kindalem Tazeb">
+    <meta property="og:title" content="Kindalem Tazeb | Full-Stack Web Developer">
+    <meta property="og:description" content="Computer Science student and full-stack developer building practical web applications in Ethiopia.">
+    <meta property="og:url" content="https://my-portfolio-9zdm.vercel.app/">
+    <meta property="og:image" content="https://my-portfolio-9zdm.vercel.app/images/newportfolio.jpg">
+    <meta property="og:image:alt" content="Kindalem Tazeb, Computer Science student and web developer">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kindalem Tazeb | Full-Stack Web Developer">
+    <meta name="twitter:description" content="Computer Science student and full-stack developer building practical web applications in Ethiopia.">
+    <meta name="twitter:image" content="https://my-portfolio-9zdm.vercel.app/images/newportfolio.jpg">
+    <link rel="sitemap" type="application/xml" href="https://my-portfolio-9zdm.vercel.app/sitemap.xml">
     <title>Kindalem Tazeb | Full-Stack Developer</title>
+    <script type="application/ld+json">
+        {
+            "@@context": "https://schema.org",
+            "@@type": "Person",
+            "name": "Kindalem Tazeb",
+            "url": "https://my-portfolio-9zdm.vercel.app/",
+            "image": "https://my-portfolio-9zdm.vercel.app/images/newportfolio.jpg",
+            "jobTitle": "Full-Stack Web Developer",
+            "alumniOf": {
+                "@@type": "CollegeOrUniversity",
+                "name": "Debark University"
+            },
+            "address": {
+                "@@type": "PostalAddress",
+                "addressLocality": "Debark",
+                "addressCountry": "ET"
+            },
+            "knowsAbout": ["Laravel", "PHP", "JavaScript", "Vue.js", "MySQL", "Tailwind CSS"],
+            "sameAs": [
+                "https://github.com/kindalemtazeb-ops",
+                "https://www.linkedin.com/in/kindalem-tazeb-dev/",
+                "https://t.me/kindalemtazeb"
+            ]
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">

@@ -10,14 +10,18 @@ $storageDirs = [
 ];
 
 foreach ($storageDirs as $dir) {
-    if (!is_dir($dir)) {
-        mkdir($dir, 0755, true);
+    if (!is_dir($dir) && !mkdir($dir, 0755, true) && !is_dir($dir)) {
+        throw new RuntimeException("Unable to create Vercel storage directory: {$dir}");
     }
 }
 
-// Set dynamic runtime paths
-putenv('APP_STORAGE=/tmp/storage');
+// Laravel's deployed code is read-only, so all runtime writes must use /tmp.
+$_ENV['LARAVEL_STORAGE_PATH'] = '/tmp/storage';
+$_SERVER['LARAVEL_STORAGE_PATH'] = '/tmp/storage';
+putenv('LARAVEL_STORAGE_PATH=/tmp/storage');
 putenv('VIEW_COMPILED_PATH=/tmp/storage/framework/views');
+putenv('SESSION_DRIVER=file');
+putenv('CACHE_STORE=file');
 
 // Forward requests to Laravel's public/index.php
 require __DIR__ . '/../public/index.php';
