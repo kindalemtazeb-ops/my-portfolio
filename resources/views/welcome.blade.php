@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#080b10">
+    <meta name="theme-color" content="#080b17">
     <meta name="description" content="Meet Kindalem Tazeb, a third-year Computer Science student at Debark University and aspiring full-stack web developer from Ethiopia. Explore projects built with PHP, Laravel, MySQL, JavaScript, and Tailwind CSS.">
     <title>Kindalem Tazeb | Full-Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,10 +21,9 @@
             </a>
 
             <div class="hidden items-center gap-4 xl:flex">
+                <a class="nav-link" href="#home">Home</a>
                 <a class="nav-link" href="#about">About</a>
                 <a class="nav-link" href="#services">Services</a>
-                <a class="nav-link" href="#projects">Venture</a>
-                <a class="nav-link" href="#skills">Skills</a>
                 <a class="nav-link" href="#projects">Projects</a>
                 <a class="nav-link" href="#contact">Contact</a>
             </div>
@@ -42,16 +41,15 @@
             </button>
         </div>
         <div class="mobile-menu xl:hidden" x-show="menuOpen" x-cloak>
+            <a href="#home" @click="menuOpen = false">Home</a>
             <a href="#about" @click="menuOpen = false">About</a>
             <a href="#services" @click="menuOpen = false">Services</a>
-            <a href="#projects" @click="menuOpen = false">Venture</a>
             <a href="#skills" @click="menuOpen = false">Skills</a>
             <a href="#projects" @click="menuOpen = false">Projects</a>
             <a href="#contact" @click="menuOpen = false">Contact</a>
             <a href="#about" title="Computer Science at Debark University" @click="menuOpen = false"><i class="fas fa-graduation-cap mr-2"></i>TLH</a>
             <a href="https://github.com/kindalemtazeb-ops" target="_blank" rel="noopener noreferrer"><i class="fab fa-github mr-2"></i>GitHub</a>
             <a href="{{ asset('assets/Kindalem-Tazeb-CV.pdf') }}" download="Kindalem-Tazeb-CV.pdf"><i class="fas fa-download mr-2"></i>Download CV</a>
-            <a href="https://github.com/kindalemtazeb-ops" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="{{ route('login') }}">Admin login</a>
         </div>
     </nav>
@@ -63,46 +61,42 @@
             <div class="hero-glow hero-glow-three"></div>
             <div class="hero-grid"></div>
             <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-6 pb-24 pt-36 lg:grid-cols-[1.05fr_.95fr] lg:px-10 lg:pb-32 lg:pt-44">
-                <div class="hero-copy order-2 lg:order-1">
-                    <div class="eyebrow"><span class="status-dot"></span> OPEN TO INTERNSHIPS & COLLABORATION</div>
-                    <h1 class="hero-title"><span class="hero-greeting">Hi, I'm</span><span class="hero-name-accent">Kindalem</span><span class="hero-surname">Tazeb<span class="hero-period">.</span></span></h1>
-                    <h2 class="hero-role">Full-Stack Web Developer<span class="role-cursor"></span></h2>
+                <div class="hero-copy order-1">
+                    <p class="hero-eyebrow"><span></span> COMPUTER SCIENCE STUDENT <span class="hero-eyebrow-separator">·</span> WEB DEVELOPER</p>
+                    <h1 class="hero-title">Hi, I'm <span class="hero-name-accent">Kindalem Tazeb</span></h1>
+                    <h2 class="hero-role">Full-Stack Web Developer <span class="hero-role-divider">|</span> Debark University</h2>
                     <p class="hero-description">
-                        I'm a third-year Computer Science student at <strong>Debark University</strong>, Ethiopia. I build practical web applications from the database to the user interface, with a focus on <strong>PHP, Laravel, MySQL, JavaScript, and Tailwind CSS</strong>.
+                        I'm a third-year Computer Science student at <strong>Debark University</strong> in Ethiopia, focused on building practical web applications with <strong>PHP, Laravel, Vue.js, MySQL, and Tailwind CSS</strong>.
+                    </p>
+                    <p class="hero-description hero-description-secondary">
+                        I enjoy bringing an idea from the first sketch to a working product: shaping clear interfaces, building reliable application logic, and organizing the data behind it. My projects include a banking management platform and a student registration system, and I'm continuing to grow through hands-on development.
                     </p>
 
                     <div class="hero-actions">
                         <a href="#contact" class="button-primary">Get in touch <i class="fas fa-arrow-up-right-from-square"></i></a>
-                        <a href="#projects" class="button-secondary">Explore my work <i class="fas fa-arrow-down"></i></a>
-                        <a href="https://github.com/kindalemtazeb-ops" class="button-secondary button-github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View GitHub</a>
+                        <a href="{{ asset('assets/Kindalem-Tazeb-CV.pdf') }}" class="button-secondary" download="Kindalem-Tazeb-CV.pdf"><i class="fas fa-download"></i> Download CV</a>
+                        <a href="#projects" class="hero-work-link">Explore my projects <i class="fas fa-arrow-down"></i></a>
                     </div>
 
                     <div class="hero-socials">
-                        <span class="social-caption">FIND ME ON</span>
                         <a href="https://github.com/kindalemtazeb-ops" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a href="https://t.me/kindalemtazeb" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
                         <a href="https://www.linkedin.com/in/kindalem-tazeb-dev/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                         <span class="social-divider"></span>
-                        <span class="location-label"><i class="fas fa-location-dot"></i> Debark, Ethiopia</span>
+                        <span><i class="fas fa-location-dot"></i> Debark, Ethiopia</span>
                     </div>
                 </div>
 
-                <div class="hero-visual order-1 mx-auto w-full max-w-md lg:order-2">
-                    <div class="portrait-frame">
-                        <div class="portrait-topline"><span><i class="fas fa-circle"></i> <i class="fas fa-circle"></i> <i class="fas fa-circle"></i></span><span>kindalem.dev</span><i class="fas fa-ellipsis"></i></div>
-                        <div class="portrait-image-wrap">
-                            <img src="{{ asset('images/newportfolio.jpg') }}" alt="Kindalem Tazeb working on a laptop" class="portrait-image">
-                            <div class="portrait-shade"></div>
-                            <div class="portrait-label"><span class="status-dot"></span> Computer Science · Debark University</div>
+                <div class="hero-visual order-2">
+                    <div class="about-portrait">
+                        <img src="{{ asset('images/newportfolio.jpg') }}" alt="Kindalem Tazeb, Computer Science student and web developer">
+                        <div class="about-portrait-caption">
+                            <span class="status-dot"></span>
+                            <span><strong>Building with purpose</strong><small>Learning, creating, improving</small></span>
                         </div>
-                        <div class="code-float code-float-top"><span class="code-float-icon">&lt;/&gt;</span><span><small>MY STACK</small><strong>PHP · Laravel · MySQL</strong></span></div>
-                        <div class="code-float code-float-bottom"><span class="status-dot"></span> Building useful things</div>
                     </div>
-                    <div class="orbit orbit-one"></div>
-                    <div class="orbit orbit-two"></div>
                 </div>
             </div>
-            <a href="#about" class="scroll-cue"><span></span> SCROLL TO EXPLORE</a>
         </section>
 
         <section id="about" class="section-shell about-section">
@@ -171,47 +165,55 @@
             </div>
         </section>
 
-        <section id="skills" class="skills-section">
+        <section id="skills" class="skills-section" x-data="{ category: 'all' }">
             <div class="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
                 <div class="section-heading-row">
                     <div>
-                        <p class="section-index">03 / TOOLS OF THE TRADE</p>
-                        <h2 class="section-title">My tech <span>stack.</span></h2>
+                        <p class="section-index">03 / TECHNICAL ARSENAL</p>
+                        <h2 class="section-title">Skills & <span>expertise.</span></h2>
                     </div>
-                    <p class="section-aside">The technologies I use to bring ideas<br class="hidden sm:block"> from a first sketch to a working product.</p>
+                    <p class="section-aside">The tools and technologies I use to build<br class="hidden sm:block"> practical, full-stack web applications.</p>
                 </div>
-                <div class="stack-grid">
-                    <article class="stack-card">
-                        <div class="stack-icon stack-php"><i class="fab fa-php"></i></div>
-                        <h3>Backend</h3>
-                        <p>PHP · Laravel</p>
-                        <span class="stack-note">Building the logic behind the app</span>
-                    </article>
-                    <article class="stack-card">
-                        <div class="stack-icon stack-js"><i class="fab fa-js"></i></div>
-                        <h3>Frontend</h3>
-                        <p>JavaScript · Vue.js</p>
-                        <span class="stack-note">Interactive, responsive experiences</span>
-                    </article>
-                    <article class="stack-card">
-                        <div class="stack-icon stack-html"><i class="fab fa-html5"></i></div>
-                        <h3>Web foundations</h3>
-                        <p>HTML5 · CSS3 · Tailwind</p>
-                        <span class="stack-note">Clean layouts and accessible UI</span>
-                    </article>
-                    <article class="stack-card">
-                        <div class="stack-icon stack-db"><i class="fas fa-database"></i></div>
-                        <h3>Data & workflow</h3>
-                        <p>MySQL · Git · Composer</p>
-                        <span class="stack-note">Organized data and reliable teamwork</span>
-                    </article>
+                <div class="skill-filters" role="group" aria-label="Filter skills by category">
+                    <button type="button" class="skill-filter" :class="{ 'is-active': category === 'all' }" :aria-pressed="category === 'all'" @click="category = 'all'">All skills</button>
+                    <button type="button" class="skill-filter" :class="{ 'is-active': category === 'backend' }" :aria-pressed="category === 'backend'" @click="category = 'backend'">Backend</button>
+                    <button type="button" class="skill-filter" :class="{ 'is-active': category === 'frontend' }" :aria-pressed="category === 'frontend'" @click="category = 'frontend'">Front-end & UI</button>
+                    <button type="button" class="skill-filter" :class="{ 'is-active': category === 'tools' }" :aria-pressed="category === 'tools'" @click="category = 'tools'">Data & tools</button>
                 </div>
-                <div class="toolbelt">
-                    <span class="toolbelt-label">ALSO IN MY TOOLKIT</span>
-                    <span><i class="fas fa-terminal"></i> VS Code</span>
-                    <span><i class="fab fa-node-js"></i> Node.js</span>
-                    <span><i class="fas fa-paper-plane"></i> Postman</span>
-                    <span><i class="fab fa-git-alt"></i> GitHub</span>
+                <div class="skill-card-grid">
+                    <article class="skill-card" x-show="category === 'all' || category === 'backend'" x-cloak>
+                        <div class="skill-card-heading">
+                            <span class="skill-card-icon"><i class="fas fa-server"></i></span>
+                            <span class="skill-card-label">APPLICATION DEVELOPMENT</span>
+                        </div>
+                        <h3>Backend & frameworks</h3>
+                        <p>Building application features, server-side logic, and useful data flows.</p>
+                        <div class="skill-tags">
+                            <span>PHP</span><span>Laravel</span>
+                        </div>
+                    </article>
+                    <article class="skill-card" x-show="category === 'all' || category === 'frontend'" x-cloak>
+                        <div class="skill-card-heading">
+                            <span class="skill-card-icon"><i class="fas fa-display"></i></span>
+                            <span class="skill-card-label">INTERFACES & INTERACTION</span>
+                        </div>
+                        <h3>Front-end & UI</h3>
+                        <p>Creating responsive interfaces with clear structure and purposeful interactions.</p>
+                        <div class="skill-tags">
+                            <span>JavaScript</span><span>Vue.js</span><span>HTML5</span><span>CSS3</span><span>Tailwind CSS</span>
+                        </div>
+                    </article>
+                    <article class="skill-card" x-show="category === 'all' || category === 'tools'" x-cloak>
+                        <div class="skill-card-heading">
+                            <span class="skill-card-icon"><i class="fas fa-database"></i></span>
+                            <span class="skill-card-label">DATA & DEVELOPMENT WORKFLOW</span>
+                        </div>
+                        <h3>Databases & tools</h3>
+                        <p>Working with relational data and the tools used throughout development.</p>
+                        <div class="skill-tags">
+                            <span>MySQL</span><span>Git & GitHub</span><span>Composer</span><span>VS Code</span><span>Node.js</span><span>Postman</span>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
