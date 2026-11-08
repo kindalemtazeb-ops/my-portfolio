@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="30" y1="25" x2="1160" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#65423B"/>
+      <stop offset=".58" stop-color="#382C32"/>
+      <stop offset="1" stop-color="#171A24"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="274" y1="165" x2="1001" y2="562" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#192B31"/>
+      <stop offset="1" stop-color="#15202A"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1200v640H0z"/>
+  <circle cx="150" cy="33" r="220" fill="#FFB58B" fill-opacity=".08"/>
+  <rect x="76" y="46" width="1048" height="548" rx="22" fill="#11151D" stroke="#FFF0E8" stroke-opacity=".2"/>
+  <path d="M76 104h1048" stroke="#FFF0E8" stroke-opacity=".15"/>
+  <circle cx="104" cy="75" r="6" fill="#EF827E"/><circle cx="125" cy="75" r="6" fill="#EEC577"/><circle cx="146" cy="75" r="6" fill="#65C99A"/>
+  <rect x="342" y="67" width="514" height="20" rx="10" fill="#202630"/>
+  <text x="559" y="81" fill="#AEB8C6" font-family="Arial,sans-serif" font-size="9">kindalem.dev</text>
+  <rect x="92" y="120" width="1016" height="456" rx="13" fill="#0C1118"/>
+  <rect x="92" y="120" width="1016" height="55" rx="13" fill="#0F151D"/>
+  <path d="M92 175h1016" stroke="#E1E9F0" stroke-opacity=".09"/>
+  <text x="126" y="154" fill="#E8EFF5" font-family="Arial,sans-serif" font-size="15" font-weight="700">kindalem<span fill="#65DEB0">.</span></text>
+  <g fill="#A0ADBB" font-family="Arial,sans-serif" font-size="10">
+    <text x="774" y="153">About</text><text x="836" y="153">Skills</text><text x="891" y="153">Projects</text><text x="960" y="153">Contact</text>
+  </g>
+  <rect x="268" y="218" width="673" height="311" rx="15" fill="url(#hero)" stroke="#DDF5EF" stroke-opacity=".1"/>
+  <circle cx="835" cy="360" r="121" fill="#57D8AA" fill-opacity=".08"/>
+  <circle cx="835" cy="360" r="91" stroke="#6FE4BB" stroke-opacity=".17"/>
+  <circle cx="835" cy="360" r="65" stroke="#6FE4BB" stroke-opacity=".14"/>
+  <rect x="323" y="268" width="199" height="21" rx="10.5" fill="#57D9AB" fill-opacity=".11" stroke="#6FE4BB" stroke-opacity=".22"/>
+  <circle cx="338" cy="278" r="3" fill="#69E4B7"/>
+  <text x="349" y="282" fill="#BFD1D1" font-family="Arial,sans-serif" font-size="8" letter-spacing="1">FULL-STACK DEVELOPER</text>
+  <text x="323" y="345" fill="#EEF4F6" font-family="Arial,sans-serif" font-size="43" font-weight="700">Hello, I'm</text>
+  <text x="323" y="391" fill="#F2F5F5" font-family="Arial,sans-serif" font-size="43" font-weight="700">Kindalem Tazeb<tspan fill="#68E2B6">.</tspan></text>
+  <text x="323" y="423" fill="#AAB8C1" font-family="Arial,sans-serif" font-size="12">Computer Science student &amp; web developer</text>
+  <text x="323" y="444" fill="#AAB8C1" font-family="Arial,sans-serif" font-size="12">building thoughtful, practical web experiences.</text>
+  <rect x="323" y="468" width="121" height="34" rx="8" fill="#65E3B7"/>
+  <text x="339" y="490" fill="#10201B" font-family="Arial,sans-serif" font-size="10" font-weight="700">Explore my work  →</text>
+  <rect x="456" y="468" width="112" height="34" rx="8" fill="#1E2B34" stroke="#DDE9EF" stroke-opacity=".2"/>
+  <text x="476" y="490" fill="#DCE5E9" font-family="Arial,sans-serif" font-size="10" font-weight="600">Get in touch</text>
+  <rect x="323" y="544" width="90" height="17" rx="8.5" fill="#17222B"/><text x="337" y="556" fill="#A7BBC5" font-family="Arial,sans-serif" font-size="8">Laravel</text>
+  <rect x="422" y="544" width="67" height="17" rx="8.5" fill="#17222B"/><text x="438" y="556" fill="#A7BBC5" font-family="Arial,sans-serif" font-size="8">PHP</text>
+  <rect x="498" y="544" width="108" height="17" rx="8.5" fill="#17222B"/><text x="513" y="556" fill="#A7BBC5" font-family="Arial,sans-serif" font-size="8">Tailwind CSS</text>
+  <circle cx="835" cy="351" r="39" fill="#ECC7AD" fill-opacity=".9"/>
+  <path d="M781 456c5-48 24-70 54-70 30 0 49 22 54 70" fill="#D9E5E3"/>
+  <path d="M792 309c1-32 19-51 45-51 24 0 40 17 42 46-9-9-20-15-34-16-16-2-31 6-53 21Z" fill="#172127"/>
+  <path d="M808 351c5 4 11 6 27 6s22-2 27-6" stroke="#A47565" stroke-width="2" stroke-linecap="round"/>
+</svg>

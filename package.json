@@ -7,6 +7,7 @@
         "dev": "vite"
     },
     "devDependencies": {
+        "@vitejs/plugin-vue": "^6.0.1",
         "@tailwindcss/forms": "^0.5.2",
         "@tailwindcss/vite": "^4.0.0",
         "alpinejs": "^3.4.2",
@@ -19,6 +20,7 @@
         "vite": "^7.0.7"
     },
     "dependencies": {
-        "@tailwindcss/postcss": "^4.2.2"
+        "@tailwindcss/postcss": "^4.2.2",
+        "vue": "^3.5.22"
     }
 }

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="30" y1="30" x2="1160" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#303B71"/>
+      <stop offset="1" stop-color="#171D36"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="300" y1="160" x2="1100" y2="594" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#202842"/>
+      <stop offset="1" stop-color="#151C2E"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1200v640H0z"/>
+  <circle cx="1050" cy="40" r="220" fill="#9EABFF" fill-opacity=".09"/>
+  <rect x="76" y="46" width="1048" height="548" rx="22" fill="#111622" stroke="#E4E9FF" stroke-opacity=".2"/>
+  <path d="M76 104h1048" stroke="#E4E9FF" stroke-opacity=".13"/>
+  <circle cx="104" cy="75" r="6" fill="#EF827E"/><circle cx="125" cy="75" r="6" fill="#EEC577"/><circle cx="146" cy="75" r="6" fill="#65C99A"/>
+  <rect x="92" y="120" width="196" height="456" rx="12" fill="#171E30"/>
+  <rect x="111" y="143" width="30" height="30" rx="9" fill="#9BAAFF"/>
+  <path d="m117 156 9-5 9 5-9 5-9-5Z" fill="#202747"/><path d="M120 159v5c4 3 8 3 12 0v-5" stroke="#202747" stroke-width="1.5"/>
+  <text x="151" y="163" fill="#EAF0FF" font-family="Arial,sans-serif" font-size="15" font-weight="700">CAMPUS PORTAL</text>
+  <rect x="108" y="198" width="167" height="40" rx="9" fill="#8292FF" fill-opacity=".17"/>
+  <rect x="120" y="211" width="14" height="14" rx="3" fill="#AEB9FF"/>
+  <text x="145" y="224" fill="#C5CEFF" font-family="Arial,sans-serif" font-size="12" font-weight="600">Dashboard</text>
+  <g fill="#8692AA" font-family="Arial,sans-serif" font-size="12">
+    <text x="145" y="271">Students</text><text x="145" y="313">Admissions</text><text x="145" y="355">Departments</text><text x="145" y="397">Courses</text><text x="145" y="439">Reports</text>
+  </g>
+  <g stroke="#8794B1" stroke-width="1.6" stroke-linecap="round">
+    <circle cx="127" cy="266" r="8"/><path d="M114 282c2-10 24-10 26 0"/>
+    <path d="M118 305h17v15h-17zM121 301v5m11-5v5"/>
+    <path d="M118 348h18m-15-5h12m-12 10h12"/>
+    <path d="M119 388h16v13h-16zM123 384h8"/>
+    <path d="M119 430h16v13h-16zM122 434h10m-10 4h7"/>
+  </g>
+  <text x="321" y="149" fill="#F0F2FF" font-family="Arial,sans-serif" font-size="22" font-weight="700">Student dashboard</text>
+  <text x="321" y="173" fill="#9CA7C2" font-family="Arial,sans-serif" font-size="12">Keep track of enrollment and campus activity.</text>
+  <rect x="1013" y="129" width="84" height="33" rx="9" fill="#8594FF"/>
+  <path d="M1030 145h14m-7-7v14" stroke="#161D38" stroke-width="1.7" stroke-linecap="round"/>
+  <text x="1051" y="149" fill="#171D38" font-family="Arial,sans-serif" font-size="10" font-weight="700">Add new</text>
+  <g>
+    <rect x="321" y="195" width="244" height="91" rx="12" fill="url(#panel)" stroke="#E3E8FF" stroke-opacity=".12"/>
+    <rect x="581" y="195" width="244" height="91" rx="12" fill="url(#panel)" stroke="#E3E8FF" stroke-opacity=".12"/>
+    <rect x="841" y="195" width="256" height="91" rx="12" fill="url(#panel)" stroke="#E3E8FF" stroke-opacity=".12"/>
+    <circle cx="536" cy="224" r="15" fill="#6F7FFF" fill-opacity=".17"/><circle cx="796" cy="224" r="15" fill="#49C6AA" fill-opacity=".15"/><circle cx="1067" cy="224" r="15" fill="#EDB76C" fill-opacity=".15"/>
+    <text x="341" y="222" fill="#A5B0C7" font-family="Arial,sans-serif" font-size="11">TOTAL STUDENTS</text>
+    <text x="341" y="260" fill="#F2F3FF" font-family="Arial,sans-serif" font-size="25" font-weight="700">1,284</text>
+    <text x="601" y="222" fill="#A5B0C7" font-family="Arial,sans-serif" font-size="11">NEW APPLICATIONS</text>
+    <text x="601" y="260" fill="#F2F3FF" font-family="Arial,sans-serif" font-size="25" font-weight="700">48</text>
+    <text x="861" y="222" fill="#A5B0C7" font-family="Arial,sans-serif" font-size="11">ACTIVE COURSES</text>
+    <text x="861" y="260" fill="#F2F3FF" font-family="Arial,sans-serif" font-size="25" font-weight="700">36</text>
+    <text x="523" y="228" fill="#A7B3FF" font-family="Arial,sans-serif" font-size="11">↗</text><text x="783" y="228" fill="#7BE4C6" font-family="Arial,sans-serif" font-size="11">✓</text><text x="1054" y="228" fill="#FFD48F" font-family="Arial,sans-serif" font-size="11">●</text>
+  </g>
+  <rect x="321" y="305" width="776" height="256" rx="13" fill="#171F32" stroke="#E3E8FF" stroke-opacity=".12"/>
+  <text x="343" y="335" fill="#EDF0FF" font-family="Arial,sans-serif" font-size="14" font-weight="700">Recently registered students</text>
+  <text x="1013" y="335" fill="#A6B1FF" font-family="Arial,sans-serif" font-size="10" font-weight="600">View all →</text>
+  <path d="M343 355h732" stroke="#E2E8FF" stroke-opacity=".11"/>
+  <g fill="#8290AC" font-family="Arial,sans-serif" font-size="10" font-weight="600">
+    <text x="355" y="378">STUDENT</text><text x="615" y="378">STUDENT ID</text><text x="790" y="378">DEPARTMENT</text><text x="972" y="378">STATUS</text>
+  </g>
+  <g font-family="Arial,sans-serif">
+    <path d="M343 390h732M343 444h732M343 498h732M343 552h732" stroke="#E2E8FF" stroke-opacity=".08"/>
+    <circle cx="370" cy="417" r="14" fill="#524977"/><text x="362" y="421" fill="#E1D8FF" font-size="9" font-weight="700">MA</text><text x="393" y="415" fill="#E6EAF8" font-size="11" font-weight="600">Marta Abebe</text><text x="393" y="430" fill="#8793AC" font-size="9">marta.a@email.com</text><text x="615" y="421" fill="#BDC6DC" font-size="10">DU-2025-0182</text><text x="790" y="421" fill="#BDC6DC" font-size="10">Computer Science</text><rect x="969" y="408" width="73" height="20" rx="10" fill="#47C9A1" fill-opacity=".14"/><text x="984" y="422" fill="#7EE4C2" font-size="9" font-weight="600">Enrolled</text>
+    <circle cx="370" cy="471" r="14" fill="#315B66"/><text x="362" y="475" fill="#C1F0F4" font-size="9" font-weight="700">DB</text><text x="393" y="469" fill="#E6EAF8" font-size="11" font-weight="600">Daniel Bekele</text><text x="393" y="484" fill="#8793AC" font-size="9">daniel.b@email.com</text><text x="615" y="475" fill="#BDC6DC" font-size="10">DU-2025-0181</text><text x="790" y="475" fill="#BDC6DC" font-size="10">Information Tech</text><rect x="969" y="462" width="73" height="20" rx="10" fill="#47C9A1" fill-opacity=".14"/><text x="984" y="476" fill="#7EE4C2" font-size="9" font-weight="600">Enrolled</text>
+    <circle cx="370" cy="525" r="14" fill="#66503A"/><text x="362" y="529" fill="#FFE5B5" font-size="9" font-weight="700">HG</text><text x="393" y="523" fill="#E6EAF8" font-size="11" font-weight="600">Hana Gebre</text><text x="393" y="538" fill="#8793AC" font-size="9">hana.g@email.com</text><text x="615" y="529" fill="#BDC6DC" font-size="10">DU-2025-0180</text><text x="790" y="529" fill="#BDC6DC" font-size="10">Business Admin</text><rect x="969" y="516" width="73" height="20" rx="10" fill="#F0B759" fill-opacity=".14"/><text x="981" y="530" fill="#F8CC84" font-size="9" font-weight="600">Pending</text>
+  </g>
+</svg>
