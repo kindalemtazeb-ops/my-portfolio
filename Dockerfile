@@ -1,6 +1,6 @@
 FROM php:8.2-apache
 
-# Install Node.js (needed for Vite build)
+# Install Node.js for building frontend assets
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get update && apt-get install -y \
     git \
@@ -32,7 +32,7 @@ COPY . /var/www/html
 
 RUN composer dump-autoload --optimize
 
-# Prepare storage and database folder
+# Prepare database and storage
 RUN mkdir -p database storage/framework/sessions storage/framework/views storage/framework/cache \
     && touch database/database.sqlite
 
