@@ -25,6 +25,9 @@ COPY . /var/www/html
 
 RUN composer dump-autoload --optimize
 
+# Copy .env.example to .env so Laravel has an environment file during build
+RUN cp .env.example .env
+
 # Explicitly rewrite Apache document root configuration
 RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available/000-default.conf
 
