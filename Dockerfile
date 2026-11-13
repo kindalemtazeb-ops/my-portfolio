@@ -1,13 +1,16 @@
 FROM php:8.2-apache
 
-RUN apt-get update && apt-get install -y \
+# Install Node.js (needed for Vite build)
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get update && apt-get install -y \
     git \
     curl \
     libpng-dev \
     libonig-dev \
     libxml2-dev \
     zip \
-    unzip
+    unzip \
+    nodejs
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
@@ -21,11 +24,15 @@ COPY composer.json composer.lock ./
 
 RUN composer install --no-dev --optimize-autoloader --no-scripts
 
+COPY package.json package-lock.json* ./
+
+RUN npm install && npm run build
+
 COPY . /var/www/html
 
 RUN composer dump-autoload --optimize
 
-# Prepare storage and database folder without overwriting with .env.example
+# Prepare storage and database folder
 RUN mkdir -p database storage/framework/sessions storage/framework/views storage/framework/cache \
     && touch database/database.sqlite
 
