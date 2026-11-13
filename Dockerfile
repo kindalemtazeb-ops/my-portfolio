@@ -25,17 +25,17 @@ COPY . /var/www/html
 
 RUN composer dump-autoload --optimize
 
-# Copy .env.example to .env and create sqlite database file
+# Copy .env.example to .env and prepare storage/database
 RUN cp .env.example .env \
-    && mkdir -p database \
+    && mkdir -p database storage/framework/sessions storage/framework/views storage/framework/cache \
     && touch database/database.sqlite
 
-# Explicitly rewrite Apache document root configuration
+# Configure Apache document root to public folder
 RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available/000-default.conf
 
-# Set proper permissions for storage, database, and cache
-RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/database /var/www/html/bootstrap/cache \
+# Set full permissions for www-data
+RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 775 /var/www/html/storage /var/www/html/database /var/www/html/bootstrap/cache
 
 EXPOSE 80
-CMD php artisan key:generate --force && php artisan config:clear && php artisan cache:clear && apache2-foreground
+CMD php artisan key:generate --force && php artisan migrate --force && php artisan config:clear && php artisan cache:clear && apache2-foreground
