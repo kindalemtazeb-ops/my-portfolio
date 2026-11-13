@@ -1,16 +1,13 @@
 FROM php:8.2-apache
 
-# Install Node.js for building frontend assets
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
-    && apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y \
     git \
     curl \
     libpng-dev \
     libonig-dev \
     libxml2-dev \
     zip \
-    unzip \
-    nodejs
+    unzip
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
@@ -20,19 +17,11 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
 
-# Copy composer files first
 COPY composer.json composer.lock ./
+
 RUN composer install --no-dev --optimize-autoloader --no-scripts
 
-# Copy package files for Node dependencies
-COPY package.json package-lock.json* ./
-RUN npm install
-
-# Copy the rest of the application code
 COPY . /var/www/html
-
-# Run Vite build AFTER copying all project files so manifest.json is generated correctly
-RUN npm run build
 
 RUN composer dump-autoload --optimize
 
