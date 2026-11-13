@@ -64,7 +64,7 @@ const projects = [
         imageAlt: 'Illustrated modern calculator project preview',
         description: 'A compact calculator project focused on a clear interface and everyday calculations.',
         technologies: ['HTML5', 'CSS3', 'JavaScript'],
-        repository: 'https://github.com/kindalemtazeb-ops/modern-calculator',
+        repository: 'https://github.com/kindalemtazeb-ops/modern-culculator',
     },
 ];
 
