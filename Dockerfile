@@ -33,6 +33,9 @@ COPY . /var/www/html
 # Run composer dump-autoload to ensure everything links properly
 RUN composer dump-autoload --optimize
 
+# Change Apache document root to public folder
+RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available/000-default.conf
+
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
