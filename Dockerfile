@@ -25,11 +25,9 @@ COPY . /var/www/html
 
 RUN composer dump-autoload --optimize
 
-# Setup .env and generate application key explicitly during build
-RUN cp .env.example .env \
-    && mkdir -p database storage/framework/sessions storage/framework/views storage/framework/cache \
-    && touch database/database.sqlite \
-    && php artisan key:generate --force
+# Prepare storage and database folder without overwriting with .env.example
+RUN mkdir -p database storage/framework/sessions storage/framework/views storage/framework/cache \
+    && touch database/database.sqlite
 
 # Configure Apache document root to public folder
 RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available/000-default.conf
