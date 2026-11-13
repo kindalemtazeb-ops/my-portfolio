@@ -1,6 +1,6 @@
 FROM php:8.2-apache
 
-# Install system dependencies
+# Install system dependencies and Composer
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y \
     zip \
     unzip
 
-# Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install PHP extensions
@@ -22,12 +21,20 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy existing application directory contents
+# Copy composer files first to cache dependencies
+COPY composer.json composer.lock ./
+
+# Install vendor dependencies inside the container
+RUN composer install --no-dev --optimize-autoloader --no-scripts
+
+# Copy the rest of the application
 COPY . /var/www/html
 
-# Copy apache configuration config
+# Run composer dump-autoload to ensure everything links properly
+RUN composer dump-autoload --optimize
+
+# Set permissions
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
-# Expose port 80 and start apache server
 EXPOSE 80
 CMD php artisan config:cache && php artisan route:cache && apache2-foreground
