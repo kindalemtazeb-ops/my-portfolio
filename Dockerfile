@@ -33,4 +33,4 @@ RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cac
     && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 
 EXPOSE 80
-CMD php artisan key:generate --force && php artisan config:cache && php artisan route:cache && apache2-foreground
+CMD php artisan key:generate --force && php artisan config:clear && php artisan cache:clear && apache2-foreground
