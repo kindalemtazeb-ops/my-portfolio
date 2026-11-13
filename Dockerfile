@@ -25,12 +25,14 @@ COPY . /var/www/html
 
 RUN composer dump-autoload --optimize
 
-# Change Apache document root to public folder
-RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available/000-default.conf
+# Explicitly update Apache document root to public folder in default config
+RUN sed -i 's!DocumentRoot /var/www/html!DocumentRoot /var/www/html/public!g' /etc/apache2/sites-available/000-default.conf \
+    && sed -i 's!<Directory /var/www/html>!<Directory /var/www/html/public>!g' /etc/apache2/apache2.conf \
+    && sed -i 's!/var/www/html/!/var/www/html/public/!g' /etc/apache2/apache2.conf
 
 # Set proper permissions for storage and cache
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache \
     && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 
 EXPOSE 80
-CMD php artisan key:generate --force && php artisan config:clear && php artisan cache:clear && apache2-foreground
+CMD php artisan key:generate --force && php artisan config:cache && php artisan route:cache && apache2-foreground
