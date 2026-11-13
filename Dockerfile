@@ -25,15 +25,17 @@ COPY . /var/www/html
 
 RUN composer dump-autoload --optimize
 
-# Copy .env.example to .env so Laravel has an environment file during build
-RUN cp .env.example .env
+# Copy .env.example to .env and create sqlite database file
+RUN cp .env.example .env \
+    && mkdir -p database \
+    && touch database/database.sqlite
 
 # Explicitly rewrite Apache document root configuration
 RUN sed -i 's!/var/www/html!/var/www/html/public!g' /etc/apache2/sites-available/000-default.conf
 
-# Set proper permissions for storage and cache
-RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache \
-    && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
+# Set proper permissions for storage, database, and cache
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/database /var/www/html/bootstrap/cache \
+    && chmod -R 775 /var/www/html/storage /var/www/html/database /var/www/html/bootstrap/cache
 
 EXPOSE 80
 CMD php artisan key:generate --force && php artisan config:clear && php artisan cache:clear && apache2-foreground
