@@ -71,7 +71,7 @@
             </div>
 
             <div class="hidden items-center gap-2 xl:flex">
-                <a class="nav-cta nav-cta-github" href="https://github.com/kindalemtazeb-ops" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                
                 <a href="#about" class="nav-cta nav-cta-tlh" title="Computer Science at Debark University"><i class="fas fa-graduation-cap"></i> TLH</a>
                 <a href="{{ asset('assets/Kindalem-Tazeb-CV.pdf') }}" class="nav-cta nav-cta-outline" download="Kindalem-Tazeb-CV.pdf"><i class="fas fa-download"></i> CV</a>
                 <a href="#contact" class="nav-cta nav-cta-primary">Get in touch <i class="fas fa-arrow-up-right-from-square"></i></a>

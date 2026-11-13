@@ -6,7 +6,6 @@ const filters = [
     { label: 'Backend', value: 'backend' },
     { label: 'Education', value: 'education' },
     { label: 'Portfolio', value: 'portfolio' },
-    { label: 'Learning', value: 'learning' },
     { label: 'Tools', value: 'tools' },
     { label: 'E-commerce', value: 'ecommerce' },
 ];
@@ -58,17 +57,6 @@ const projects = [
     },
     {
         number: '05',
-        title: 'Learn Laravel',
-        category: 'learning',
-        categoryLabel: 'LEARNING / LARAVEL',
-        image: '/images/projects/laravel-learning-preview.svg',
-        imageAlt: 'Illustrated Laravel learning project preview',
-        description: 'A hands-on repository for learning Laravel and practicing the building blocks of backend web development.',
-        technologies: ['Laravel', 'PHP'],
-        repository: 'https://github.com/kindalemtazeb-ops/learn_laravel',
-    },
-    {
-        number: '06',
         title: 'Modern Calculator',
         category: 'tools',
         categoryLabel: 'TOOLS / FRONT-END',
@@ -123,7 +111,15 @@ const visibleProjects = computed(() => {
         </div>
 
         <div class="project-grid">
-            <article v-for="project in visibleProjects" :key="project.number" class="project-card">
+            <a
+                v-for="project in visibleProjects"
+                :key="project.number"
+                class="project-card"
+                :href="project.repository"
+                target="_blank"
+                rel="noopener noreferrer"
+                :aria-label="`View ${project.title} source on GitHub`"
+            >
                 <div class="project-art">
                     <img class="project-cover" :src="project.image" :alt="project.imageAlt" loading="lazy" decoding="async">
                     <span class="project-number">{{ project.number }}</span>
@@ -133,22 +129,19 @@ const visibleProjects = computed(() => {
                     <div class="project-title-line">
                         <h3>{{ project.title }}</h3>
                         <span v-if="project.comingSoon" class="project-status">IN THE WORKS</span>
-                        <a
-                            v-else
-                            :href="project.repository"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            :aria-label="`View ${project.title} on GitHub`"
-                        >
+                        <span v-else class="project-repository-icon" aria-hidden="true">
                             <i class="fas fa-arrow-up-right-from-square"></i>
-                        </a>
+                        </span>
                     </div>
                     <p>{{ project.description }}</p>
                     <div class="project-tags">
                         <span v-for="technology in project.technologies" :key="technology">{{ technology }}</span>
                     </div>
+                    <span class="project-code-link" aria-hidden="true">
+                        View code <i class="fas fa-arrow-up-right-from-square"></i>
+                    </span>
                 </div>
-            </article>
+            </a>
         </div>
     </div>
 </template>
