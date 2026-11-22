@@ -21,11 +21,11 @@ Route::middleware(['auth', EnsureOwnerEmail::class])->group(function () {
     })->middleware('verified')->name('dashboard');
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::update'])->name('profile.update');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::get('/admin/messages', [ContactController::class, 'index'])->name('admin.messages');
-    Route::delete('/admin/messages/{id}', [ContactController::class, 'destroy'])->name('admin.messages.destroy');
+    Route::delete('/admin/messages/{id}', [TypeSourceControllerChangeHere_ContactController::class, 'destroy'])->name('admin.messages.destroy');
 });
 
 require __DIR__.'/auth.php';
