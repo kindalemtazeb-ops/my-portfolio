@@ -16,8 +16,6 @@ Route::get('/', function () {
 })->name('home');
 
 // 2. የContact Route ማስተካከያ
-// ፎርሙ ያለው በዋናው ገጽ (welcome) ላይ ስለሆነ፣
-// ሰዎች /contact ብለው ሲገቡ ስህተት እንዳይሰጥ ወደ ዋናው ገጽ እንመልሳቸዋለን።
 Route::get('/contact', function () {
     return redirect()->route('home');
 })->name('contact.show');
@@ -25,13 +23,21 @@ Route::get('/contact', function () {
 // ሰዎች መልዕክት እንዲልኩ የሚያስችለው (Contact Form Submit)
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
-// 3. ዳሽቦርድ (ለአንተ ብቻ - ሎጊን ስታደርግ የምታየው)
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// 3. ለባለቤቱ (ለአንተ) ብቻ የሚፈቀዱ የDashboard እና የAdmin ስራዎች
+Route::middleware(['auth', function ($request, $next) {
+    $allowedEmail = 'YOUR_NEW_EMAIL@gmail.com';
 
-// 4. ለባለቤቱ (ለአንተ) ብቻ የሚፈቀዱ የAdmin ስራዎች
-Route::middleware('auth')->group(function () {
+    if (strtolower(trim($request->user()->email)) !== strtolower(trim($allowedEmail))) {
+        abort(403, 'Unauthorized access.');
+    }
+
+    return $next($request);
+}])->group(function () {
+
+    // ዳሽቦርድ (ለአንተ ብቻ)
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->middleware('verified')->name('dashboard');
 
     // የፕሮፋይል ማስተካከያ
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
