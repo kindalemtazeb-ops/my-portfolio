@@ -237,7 +237,7 @@
                         <a class="button-primary featured-project-link" href="https://github.com/kindalemtazeb-ops/laravel-ecommerce" target="_blank" rel="noopener noreferrer">View source on GitHub <i class="fas fa-arrow-up-right-from-square"></i></a>
                     </div>
                     <a class="featured-project-art" href="https://github.com/kindalemtazeb-ops/laravel-ecommerce" target="_blank" rel="noopener noreferrer" aria-label="View HabeshaCart source on GitHub">
-                        <img src="{{ asset('images/projects/habeshacart-preview.svg') }}" alt="HabeshaCart Ethiopian marketplace storefront preview" loading="lazy" decoding="async">
+                        <img src="{{ asset('images/projects/habeshacart.png') }}" alt="HabeshaCart Ethiopian marketplace storefront preview" loading="lazy" decoding="async">
                     </a>
                 </div>
             </div>
