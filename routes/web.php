@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Middleware\EnsureOwnerEmail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,15 +25,7 @@ Route::get('/contact', function () {
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
 // 3. ለባለቤቱ (ለአንተ) ብቻ የሚፈቀዱ የDashboard እና የAdmin ስራዎች
-Route::middleware(['auth', function ($request, $next) {
-    $allowedEmail = 'YOUR_NEW_EMAIL@gmail.com';
-
-    if (strtolower(trim($request->user()->email)) !== strtolower(trim($allowedEmail))) {
-        abort(403, 'Unauthorized access.');
-    }
-
-    return $next($request);
-}])->group(function () {
+Route::middleware(['auth', EnsureOwnerEmail::class])->group(function () {
 
     // ዳሽቦርድ (ለአንተ ብቻ)
     Route::get('/dashboard', function () {
