@@ -16,11 +16,18 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::firstOrCreate(
-            ['email' => 'kindalemtazeb@gmail.com'],
+        $email = 'YOUR_NEW_EMAIL@gmail.com';
+        $password = env('ADMIN_PASSWORD', 'Kindalem@2026');
+
+        // ቀደም ብለው የነበሩ usersን በሙሉ አጽዳ
+        User::query()->delete();
+
+        // አዲሱን ትክክለኛ admin user ብቻ ፍጠር / አዘምን
+        User::updateOrCreate(
+            ['email' => $email],
             [
                 'name' => 'Kindalem Tazeb',
-                'password' => Hash::make(env('ADMIN_PASSWORD', 'Kindalem@2026')),
+                'password' => Hash::make($password),
                 'email_verified_at' => now(),
             ]
         );
