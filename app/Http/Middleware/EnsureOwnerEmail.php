@@ -1,5 +1,7 @@
 ﻿<?php
 
+
+
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -8,10 +10,10 @@ class EnsureOwnerEmail
 {
     public function handle(Request $request, Closure $next): Response
     {
-        $allowedEmail = 'YOUR_ADMIN_EMAIL@gmail.com';
-        $userEmail = strtolower(trim((string) optional($request->user())->email));
+        $allowedEmail = 'kindalemtazeb@gmail.com';
+        $user = $request->user();
 
-        if ($userEmail === '' || $userEmail !== strtolower(trim($allowedEmail))) {
+        if (! $user || strtolower(trim($user->email)) !== strtolower(trim($allowedEmail))) {
             abort(403, 'Unauthorized access.');
         }
 
