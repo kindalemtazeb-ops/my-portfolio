@@ -1,0 +1,628 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://127.0.0.1:5500/modern-culculator/index.html
+Subject: =?utf-8?Q?ProCalc=20Suite=20=E2=80=94=20Scientific,=20Currency,=20Unit=20?=
+ =?utf-8?Q?&=20Programmer?=
+Date: Sun, 22 Nov 2026 16:59:16 GMT
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--u7XoE8FlI5BMde4Qx12UIYQDPCKS3TzRpIAV2CkLgt----"
+
+
+------MultipartBoundary--u7XoE8FlI5BMde4Qx12UIYQDPCKS3TzRpIAV2CkLgt----
+Content-Type: text/html
+Content-ID: <frame-30F9EF68D5F2B5367312385987C2B75A@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5500/modern-culculator/index.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8">
+   =20
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>ProCalc Suite =E2=80=94 Scientific, Currency, Unit &amp; Program=
+mer</title>
+    <link rel=3D"stylesheet" href=3D"http://127.0.0.1:5500/modern-culculato=
+r/style.css">
+</head>
+<body>
+    <main class=3D"app-wrapper">
+        <section class=3D"calculator" aria-label=3D"ProCalc Suite">
+            <header class=3D"calc-header">
+                <div class=3D"header-left">
+                    <span class=3D"brand-badge">PRO CALC</span>
+                   =20
+                </div>
+                <div class=3D"header-actions">
+                    <button type=3D"button" class=3D"mode-btn" id=3D"angleM=
+odeBtn" title=3D"Switch Angle Unit">DEG</button>
+                    <button type=3D"button" class=3D"icon-btn" id=3D"histor=
+yToggle" title=3D"Toggle History">=F0=9F=95=92</button>
+                    <button type=3D"button" class=3D"icon-btn" id=3D"export=
+Btn" title=3D"Download History (.txt)">=E2=AC=87</button>
+                    <button type=3D"button" class=3D"icon-btn" id=3D"copyBt=
+n" title=3D"Copy Result">=F0=9F=93=8B</button>
+                    <button type=3D"button" class=3D"icon-btn" id=3D"themeT=
+oggle" title=3D"Toggle Theme">=F0=9F=8C=99</button>
+                </div>
+            </header>
+
+            <nav class=3D"suite-tabs" aria-label=3D"Calculator Modes">
+                <button type=3D"button" class=3D"tab-btn active" data-tab=
+=3D"sci">Scientific</button>
+                <button type=3D"button" class=3D"tab-btn" data-tab=3D"curr"=
+>Currency</button>
+                <button type=3D"button" class=3D"tab-btn" data-tab=3D"unit"=
+>Units</button>
+                <button type=3D"button" class=3D"tab-btn" data-tab=3D"prog"=
+>Programmer</button>
+                <button type=3D"button" class=3D"tab-btn" data-tab=3D"ethio=
+">Ethio Tax &amp; VAT</button>
+            </nav>
+
+           =20
+
+            <!-- TAB 1: SCIENTIFIC CALCULATOR -->
+            <div class=3D"tab-panel active" id=3D"tab-sci">
+                <div class=3D"display-box">
+                    <div class=3D"expression" id=3D"expression"></div>
+                    <div class=3D"display" id=3D"display">0</div>
+                </div>
+
+                <div class=3D"mem-row">
+                    <button type=3D"button" class=3D"btn btn-mem" data-mem=
+=3D"MC" title=3D"Memory Clear">MC</button>
+                    <button type=3D"button" class=3D"btn btn-mem" data-mem=
+=3D"MR" title=3D"Memory Recall">MR</button>
+                    <button type=3D"button" class=3D"btn btn-mem" data-mem=
+=3D"M+" title=3D"Memory Add">M+</button>
+                    <button type=3D"button" class=3D"btn btn-mem" data-mem=
+=3D"M-" title=3D"Memory Subtract">M-</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"rand" title=3D"Random Number (0-1)">Rand</button>
+                </div>
+
+                <div class=3D"sci-grid">
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"sqrt" title=3D"Square Root">=E2=88=9Ax</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"cbrt" title=3D"Cube Root">=E2=88=9Bx</button>
+                    <button type=3D"button" class=3D"btn btn-value" data-va=
+lue=3D"yroot(" title=3D"Y-th Root">=CA=B8=E2=88=9Ax</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"square" title=3D"Square">x=C2=B2</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"cube" title=3D"Cube">x=C2=B3</button>
+                    <button type=3D"button" class=3D"btn btn-value" data-va=
+lue=3D"^" title=3D"Power">x=CA=B8</button>
+
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"sin">sin</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"cos">cos</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"tan">tan</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"asin">sin=E2=81=BB=C2=B9</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"acos">cos=E2=81=BB=C2=B9</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"atan">tan=E2=81=BB=C2=B9</button>
+
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"sinh">sinh</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"cosh">cosh</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"tanh">tanh</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"log">log=E2=82=81=E2=82=80</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"log2">log=E2=82=82</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"ln">ln</button>
+
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"inv" title=3D"Reciprocal">1/x</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"fact" title=3D"Factorial">n!</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"exp" title=3D"e^x">e=CB=A3</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"abs" title=3D"Absolute Value">|x|</button>
+                    <button type=3D"button" class=3D"btn btn-const" data-co=
+nst=3D"PI" title=3D"Pi">=CF=80</button>
+                    <button type=3D"button" class=3D"btn btn-const" data-co=
+nst=3D"E" title=3D"Euler's Number">e</button>
+                </div>
+
+                <div class=3D"buttons">
+                    <button type=3D"button" class=3D"btn btn-fn" data-actio=
+n=3D"clear">C</button>
+                    <button type=3D"button" class=3D"btn btn-fn" data-actio=
+n=3D"backspace">=E2=8C=AB</button>
+                    <button type=3D"button" class=3D"btn btn-fn" data-fn=3D=
+"sign">=C2=B1</button>
+                    <button type=3D"button" class=3D"btn btn-op" data-value=
+=3D"%">%</button>
+                    <button type=3D"button" class=3D"btn btn-op" data-value=
+=3D"/">=C3=B7</button>
+
+                    <button type=3D"button" class=3D"btn btn-num" data-valu=
+e=3D"7">7</button>
+                    <button type=3D"button" class=3D"btn btn-num" data-valu=
+e=3D"8">8</button>
+                    <button type=3D"button" class=3D"btn btn-num" data-valu=
+e=3D"9">9</button>
+                    <button type=3D"button" class=3D"btn btn-op" data-value=
+=3D"*">=C3=97</button>
+                    <button type=3D"button" class=3D"btn btn-value" data-va=
+lue=3D"(">(</button>
+
+                    <button type=3D"button" class=3D"btn btn-num" data-valu=
+e=3D"4">4</button>
+                    <button type=3D"button" class=3D"btn btn-num" data-valu=
+e=3D"5">5</button>
+                    <button type=3D"button" class=3D"btn btn-num" data-valu=
+e=3D"6">6</button>
+                    <button type=3D"button" class=3D"btn btn-op" data-value=
+=3D"-">=E2=88=92</button>
+                    <button type=3D"button" class=3D"btn btn-value" data-va=
+lue=3D")">)</button>
+
+                    <button type=3D"button" class=3D"btn btn-num" data-valu=
+e=3D"1">1</button>
+                    <button type=3D"button" class=3D"btn btn-num" data-valu=
+e=3D"2">2</button>
+                    <button type=3D"button" class=3D"btn btn-num" data-valu=
+e=3D"3">3</button>
+                    <button type=3D"button" class=3D"btn btn-op" data-value=
+=3D"+">+</button>
+                    <button type=3D"button" class=3D"btn btn-eq btn-tall" d=
+ata-action=3D"equals">=3D</button>
+
+                    <button type=3D"button" class=3D"btn btn-num btn-zero" =
+data-value=3D"0">0</button>
+                    <button type=3D"button" class=3D"btn btn-num" data-valu=
+e=3D".">.</button>
+                    <button type=3D"button" class=3D"btn btn-sci" data-fn=
+=3D"sq10" title=3D"10^x">10=CB=A3</button>
+                </div>
+            </div>
+
+            <!-- TAB 2: CURRENCY CONVERTER -->
+            <div class=3D"tab-panel" id=3D"tab-curr">
+                <div class=3D"tool-card">
+                    <label class=3D"tool-label" for=3D"currAmount">Amount</=
+label>
+                    <input type=3D"number" id=3D"currAmount" class=3D"tool-=
+input" value=3D"100" step=3D"any">
+
+                    <div class=3D"tool-row">
+                        <div class=3D"tool-col">
+                            <label class=3D"tool-label" for=3D"currFrom">Fr=
+om</label>
+                            <select id=3D"currFrom" class=3D"tool-select">
+                                <option value=3D"USD">USD ($)</option>
+                                <option value=3D"ETB">ETB (Br)</option>
+                                <option value=3D"EUR">EUR (=E2=82=AC)</opti=
+on>
+                                <option value=3D"GBP">GBP (=C2=A3)</option>
+                            </select>
+                        </div>
+                        <div class=3D"tool-col">
+                            <label class=3D"tool-label" for=3D"currTo">To</=
+label>
+                            <select id=3D"currTo" class=3D"tool-select">
+                                <option value=3D"ETB" selected=3D"">ETB (Br=
+)</option>
+                                <option value=3D"USD">USD ($)</option>
+                                <option value=3D"EUR">EUR (=E2=82=AC)</opti=
+on>
+                                <option value=3D"GBP">GBP (=C2=A3)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label class=3D"tool-label" for=3D"currRate">1 USD in E=
+TB (Birr Rate)</label>
+                    <input type=3D"number" id=3D"currRate" class=3D"tool-in=
+put" value=3D"120" step=3D"0.01">
+
+                    <div class=3D"result-box" id=3D"currResult">100 USD =3D=
+ 12,000 ETB</div>
+                </div>
+            </div>
+
+            <!-- TAB 3: UNIT CONVERTER -->
+            <div class=3D"tab-panel" id=3D"tab-unit">
+                <div class=3D"tool-card">
+                    <label class=3D"tool-label" for=3D"unitCategory">Catego=
+ry</label>
+                    <select id=3D"unitCategory" class=3D"tool-select">
+    <option value=3D"length" selected=3D"">Length (m, km, cm, mi)</option>
+    <option value=3D"weight">Weight (kg, qtl, g, lb)</option>
+    <option value=3D"area">Area (ha, m=C2=B2)</option>
+    <option value=3D"temp">Temperature (=C2=B0C, =C2=B0F, K)</option>
+</select>
+
+                    <label class=3D"tool-label" for=3D"unitValue">Value</la=
+bel>
+                    <input type=3D"number" id=3D"unitValue" class=3D"tool-i=
+nput" value=3D"1" step=3D"any">
+
+                    <div class=3D"tool-row">
+                        <div class=3D"tool-col">
+                            <label class=3D"tool-label" for=3D"unitFrom">Fr=
+om</label>
+                            <select id=3D"unitFrom" class=3D"tool-select"><=
+option value=3D"m">Meter (m)</option><option value=3D"km">Kilometer (km)</o=
+ption><option value=3D"cm">Centimeter (cm)</option><option value=3D"mi">Mil=
+e (mi)</option></select>
+                        </div>
+                        <div class=3D"tool-col">
+                            <label class=3D"tool-label" for=3D"unitTo">To</=
+label>
+                            <select id=3D"unitTo" class=3D"tool-select"><op=
+tion value=3D"m">Meter (m)</option><option value=3D"km">Kilometer (km)</opt=
+ion><option value=3D"cm">Centimeter (cm)</option><option value=3D"mi">Mile =
+(mi)</option></select>
+                        </div>
+                    </div>
+
+                    <div class=3D"result-box" id=3D"unitResult">1 m =3D 0.0=
+01 km</div>
+                </div>
+            </div>
+
+           <!-- TAB 4: PROGRAMMER MODE -->
+            <div class=3D"tab-panel" id=3D"tab-prog">
+                <div class=3D"tool-card">
+                    <div class=3D"tool-row">
+                        <div class=3D"tool-col">
+                            <label class=3D"tool-label" for=3D"progFrom">Fr=
+om Base</label>
+                            <select id=3D"progFrom" class=3D"tool-select">
+                                <option value=3D"10" selected=3D"">Decimal =
+(DEC - Base 10)</option>
+                                <option value=3D"16">Hexadecimal (HEX - Bas=
+e 16)</option>
+                                <option value=3D"2">Binary (BIN - Base 2)</=
+option>
+                                <option value=3D"8">Octal (OCT - Base 8)</o=
+ption>
+                            </select>
+                        </div>
+                        <div class=3D"tool-col">
+                            <label class=3D"tool-label" for=3D"progTo">To B=
+ase</label>
+                            <select id=3D"progTo" class=3D"tool-select">
+                                <option value=3D"16" selected=3D"">Hexadeci=
+mal (HEX - Base 16)</option>
+                                <option value=3D"2">Binary (BIN - Base 2)</=
+option>
+                                <option value=3D"8">Octal (OCT - Base 8)</o=
+ption>
+                                <option value=3D"10">Decimal (DEC - Base 10=
+)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label class=3D"tool-label" for=3D"progInput">Input Val=
+ue</label>
+                    <input type=3D"text" id=3D"progInput" class=3D"tool-inp=
+ut" value=3D"249" placeholder=3D"Enter value...">
+
+                    <div class=3D"result-box" id=3D"progConvertedResult">24=
+9 (DEC) =3D F9 (HEX)</div>
+
+                    <div class=3D"base-grid">
+                        <div class=3D"base-box">
+                            <span class=3D"base-tag">DEC</span>
+                            <span class=3D"base-val" id=3D"progDec">249</sp=
+an>
+                        </div>
+                        <div class=3D"base-box">
+                            <span class=3D"base-tag">HEX</span>
+                            <span class=3D"base-val" id=3D"progHex">F9</spa=
+n>
+                        </div>
+                        <div class=3D"base-box">
+                            <span class=3D"base-tag">BIN</span>
+                            <span class=3D"base-val" id=3D"progBin">1111100=
+1</span>
+                        </div>
+                        <div class=3D"base-box">
+                            <span class=3D"base-tag">OCT</span>
+                            <span class=3D"base-val" id=3D"progOct">371</sp=
+an>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- TAB 5: ETHIOPIA TAX, SALARY & VAT / TRADE -->
+            <div class=3D"tab-panel" id=3D"tab-ethio">
+                <div class=3D"tool-card">
+                    <h3 class=3D"tool-section-title">Ethiopia Monthly Salar=
+y &amp; Income Tax</h3>
+                    <label class=3D"tool-label" for=3D"grossSalary">Gross M=
+onthly Salary (ETB)</label>
+                    <input type=3D"number" id=3D"grossSalary" class=3D"tool=
+-input" value=3D"15000" min=3D"0" step=3D"any">
+
+                    <div class=3D"ethio-summary-grid">
+                        <div class=3D"ethio-stat-box">
+                            <span class=3D"ethio-stat-label">Income Tax</sp=
+an>
+                            <span class=3D"ethio-stat-val" id=3D"ethioIncom=
+eTax">3,750 ETB</span>
+                        </div>
+                        <div class=3D"ethio-stat-box">
+                            <span class=3D"ethio-stat-label">Employee Pensi=
+on (7%)</span>
+                            <span class=3D"ethio-stat-val" id=3D"ethioPensi=
+on">1,050 ETB</span>
+                        </div>
+                        <div class=3D"ethio-stat-box">
+                            <span class=3D"ethio-stat-label">Net Salary (Ta=
+ke-Home)</span>
+                            <span class=3D"ethio-stat-val highlight" id=3D"=
+ethioNetSalary">10,200 ETB</span>
+                        </div>
+                        <div class=3D"ethio-stat-box">
+                            <span class=3D"ethio-stat-label">Employer Pensi=
+on (11%)</span>
+                            <span class=3D"ethio-stat-val" id=3D"ethioEmplo=
+yerPension">1,650 ETB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=3D"tool-card">
+                    <h3 class=3D"tool-section-title">15% VAT &amp; Profit /=
+ Discount</h3>
+                    <label class=3D"tool-label" for=3D"tradeAmount">Base / =
+Item Price (ETB)</label>
+                    <input type=3D"number" id=3D"tradeAmount" class=3D"tool=
+-input" value=3D"1000" min=3D"0" step=3D"any">
+
+                    <div class=3D"tool-row">
+                        <div class=3D"tool-col">
+                            <label class=3D"tool-label" for=3D"vatMode">VAT=
+ Mode</label>
+                            <select id=3D"vatMode" class=3D"tool-select">
+                                <option value=3D"add15" selected=3D"">Add 1=
+5% VAT (Exclusive -&gt; Inclusive)</option>
+                                <option value=3D"extract15">Extract 15% VAT=
+ (Inclusive -&gt; Base)</option>
+                            </select>
+                        </div>
+                        <div class=3D"tool-col">
+                            <label class=3D"tool-label" for=3D"profitMargin=
+Pct">Profit Margin (%)</label>
+                            <input type=3D"number" id=3D"profitMarginPct" c=
+lass=3D"tool-input" value=3D"20" min=3D"0" step=3D"any">
+                        </div>
+                    </div>
+
+                    <div class=3D"result-box" id=3D"vatResultBox">VAT (15%)=
+: 150 ETB | Total: 1,150 ETB</div>
+                    <div class=3D"result-box secondary-result" id=3D"profit=
+ResultBox">Selling Price (20%): 1,200 ETB | Profit: 200 ETB</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   =20
+<!-- Code injected by live-server -->
+
+
+</body></html>
+------MultipartBoundary--u7XoE8FlI5BMde4Qx12UIYQDPCKS3TzRpIAV2CkLgt----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5500/modern-culculator/style.css
+
+@charset "utf-8";
+
+:root { --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); -=
+-card-bg: rgba(30, 41, 59, 0.96); --display-bg: #0f172a; --text-main: #f8fa=
+fc; --text-muted: #94a3b8; --num-bg: #334155; --num-hover: #475569; --sci-b=
+g: #1e293b; --sci-border: rgba(148, 163, 184, 0.25); --sci-hover: #334155; =
+--fn-bg: #64748b; --fn-hover: #94a3b8; --op-bg: #f59e0b; --op-hover: #d9770=
+6; --shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.55); }
+
+body.light-theme { --bg-gradient: linear-gradient(135deg, #e2e8f0 0%, #f8fa=
+fc 100%); --card-bg: rgba(255, 255, 255, 0.97); --display-bg: #f1f5f9; --te=
+xt-main: #0f172a; --text-muted: #64748b; --num-bg: #e2e8f0; --num-hover: #c=
+bd5e1; --sci-bg: #f8fafc; --sci-border: rgba(15, 23, 42, 0.16); --sci-hover=
+: #e2e8f0; --fn-bg: #cbd5e1; --fn-hover: #94a3b8; --op-bg: #ea580c; --op-ho=
+ver: #c2410c; --shadow: 0 18px 36px -14px rgba(15, 23, 42, 0.18); }
+
+*, ::before, ::after { box-sizing: border-box; margin: 0px; padding: 0px; f=
+ont-family: "Segoe UI", system-ui, -apple-system, sans-serif; }
+
+html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
+
+body { min-height: 100vh; overflow-y: auto; display: flex; justify-content:=
+ center; align-items: flex-start; background: var(--bg-gradient); color: va=
+r(--text-main); padding: 12px 10px 24px; transition: background 0.3s, color=
+ 0.3s; }
+
+.app-wrapper { width: 100%; max-width: 450px; min-width: 0px; display: flex=
+; justify-content: center; align-items: flex-start; margin: auto 0px; }
+
+.calculator { width: 100%; max-width: 430px; min-width: 0px; background: va=
+r(--card-bg); border-radius: 22px; padding: 11px 13px; box-shadow: var(--sh=
+adow); border: 1px solid rgba(255, 255, 255, 0.08); }
+
+.calc-header { display: flex; justify-content: space-between; align-items: =
+center; margin-bottom: 6px; }
+
+.header-left { display: flex; align-items: center; gap: 8px; }
+
+.brand-badge { font-size: 0.72rem; font-weight: 700; letter-spacing: 1.5px;=
+ color: var(--op-bg); }
+
+.mem-badge { font-size: 0.68rem; font-weight: 700; background: var(--op-bg)=
+; color: rgb(255, 255, 255); padding: 2px 6px; border-radius: 6px; }
+
+.header-actions { display: flex; align-items: center; gap: 5px; }
+
+.mode-btn { background: var(--sci-bg); color: var(--text-main); border: 1px=
+ solid var(--sci-border); border-radius: 999px; padding: 2px 8px; font-size=
+: 0.68rem; font-weight: 700; cursor: pointer; }
+
+.icon-btn { background: transparent; border: 1px solid rgba(148, 163, 184, =
+0.35); border-radius: 50%; width: 26px; height: 26px; flex-shrink: 0; displ=
+ay: inline-flex; align-items: center; justify-content: center; cursor: poin=
+ter; font-size: 0.76rem; color: var(--text-main); }
+
+.icon-btn:hover { background: rgba(148, 163, 184, 0.15); }
+
+.suite-tabs { display: grid; grid-template-columns: repeat(5, minmax(0px, 1=
+fr)); gap: 3px; background: var(--display-bg); padding: 3px; border-radius:=
+ 10px; margin-bottom: 8px; }
+
+.tab-btn { border-width: medium; border-style: none; border-color: currentc=
+olor; border-image: none; background: transparent; color: var(--text-muted)=
+; font-size: 0.63rem; font-weight: 700; padding: 6px 2px; border-radius: 8p=
+x; cursor: pointer; white-space: nowrap; min-width: 0px; transition: backgr=
+ound 0.15s, color 0.15s; }
+
+.tab-btn.active { background: var(--op-bg); color: rgb(255, 255, 255); }
+
+.tab-panel { display: none; min-width: 0px; }
+
+.tab-panel.active { display: flex; flex-direction: column; gap: 8px; }
+
+.display-box { width: 100%; background: var(--display-bg); border-radius: 1=
+4px; padding: 8px 12px; margin-bottom: 8px; text-align: right; min-height: =
+54px; display: flex; flex-direction: column; justify-content: space-between=
+; overflow-wrap: anywhere; }
+
+.expression { font-size: 0.76rem; color: var(--text-muted); min-height: 14p=
+x; }
+
+.display { font-size: 1.5rem; font-weight: 700; line-height: 1.1; color: va=
+r(--text-main); }
+
+.history-panel { background: var(--display-bg); border-radius: 12px; paddin=
+g: 7px 10px; margin-bottom: 8px; max-height: 80px; overflow-y: auto; border=
+: 1px solid var(--sci-border); }
+
+.history-header { display: flex; justify-content: space-between; align-item=
+s: center; font-size: 0.72rem; color: var(--text-muted); margin-bottom: 4px=
+; }
+
+.clear-history-btn { background: transparent; border-width: medium; border-=
+style: none; border-color: currentcolor; border-image: none; color: var(--o=
+p-bg); font-size: 0.72rem; font-weight: 600; cursor: pointer; }
+
+.history-list { list-style: none; font-size: 0.78rem; }
+
+.history-item { padding: 2px 0px; border-bottom: 1px dashed rgba(148, 163, =
+184, 0.15); cursor: pointer; }
+
+.history-item:last-child { border-bottom-width: medium; border-bottom-style=
+: none; border-bottom-color: currentcolor; }
+
+.history-empty { color: var(--text-muted); font-size: 0.74rem; }
+
+.mem-row { width: 100%; min-width: 0px; display: grid; grid-template-column=
+s: repeat(5, minmax(0px, 1fr)); gap: 5px; margin-bottom: 5px; }
+
+.sci-grid { width: 100%; min-width: 0px; display: grid; grid-template-colum=
+ns: repeat(6, minmax(0px, 1fr)); gap: 5px; margin-bottom: 6px; }
+
+.buttons { width: 100%; min-width: 0px; display: grid; grid-template-column=
+s: repeat(5, minmax(0px, 1fr)); gap: 5px; }
+
+.btn { width: 100%; min-width: 0px; height: 30px; border-width: medium; bor=
+der-style: none; border-color: currentcolor; border-image: none; border-rad=
+ius: 9px; font-size: 0.82rem; font-weight: 600; cursor: pointer; display: i=
+nline-flex; align-items: center; justify-content: center; transition: trans=
+form 0.08s, background-color 0.15s; }
+
+.btn:active { transform: scale(0.95); }
+
+.btn-sci, .btn-const, .btn-value, .btn-mem { background: var(--sci-bg); col=
+or: var(--text-main); border: 1px solid var(--sci-border); font-size: 0.74r=
+em; height: 28px; }
+
+.btn-sci:hover, .btn-const:hover, .btn-value:hover, .btn-mem:hover { backgr=
+ound: var(--sci-hover); }
+
+.btn-num { background: var(--num-bg); color: var(--text-main); font-size: 0=
+.92rem; height: 32px; }
+
+.btn-num:hover { background: var(--num-hover); }
+
+.btn-fn { background: var(--fn-bg); color: rgb(15, 23, 42); height: 31px; }
+
+.btn-fn:hover { background: var(--fn-hover); }
+
+.btn-op, .btn-eq { background: var(--op-bg); color: rgb(255, 255, 255); hei=
+ght: 31px; }
+
+.btn-op:hover, .btn-eq:hover { background: var(--op-hover); }
+
+.btn-zero { grid-column: span 2; height: 32px; }
+
+.btn-tall { grid-row: span 2; height: 100%; }
+
+.tool-card { background: var(--display-bg); border-radius: 14px; padding: 1=
+0px 11px; display: flex; flex-direction: column; gap: 7px; border: 1px soli=
+d var(--sci-border); min-width: 0px; max-width: 100%; overflow: hidden; }
+
+.tool-label { font-size: 0.72rem; color: var(--text-muted); font-weight: 60=
+0; }
+
+.tool-input, .tool-select { width: 100%; min-width: 0px; max-width: 100%; p=
+adding: 7px 9px; border-radius: 9px; border: 1px solid var(--sci-border); b=
+ackground: var(--sci-bg); color: var(--text-main); font-size: 0.84rem; }
+
+.tool-row { display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr=
+)); gap: 7px; min-width: 0px; }
+
+.tool-col { display: flex; flex-direction: column; gap: 3px; min-width: 0px=
+; }
+
+.result-box { width: 100%; max-width: 100%; min-width: 0px; background: var=
+(--card-bg); border: 1px solid var(--op-bg); border-radius: 10px; padding: =
+8px 10px; text-align: center; font-size: 0.82rem; line-height: 1.35; font-w=
+eight: 700; color: var(--text-main); white-space: normal; overflow-wrap: an=
+ywhere; word-break: break-word; }
+
+.base-grid { display: flex; flex-direction: column; gap: 8px; }
+
+.base-box { background: var(--card-bg); border: 1px solid var(--sci-border)=
+; border-radius: 10px; padding: 9px 12px; display: flex; justify-content: s=
+pace-between; align-items: center; gap: 8px; }
+
+.base-tag { font-size: 0.75rem; font-weight: 700; color: var(--op-bg); }
+
+.base-val { font-size: 0.9rem; font-weight: 600; overflow-wrap: anywhere; }
+
+.tool-section-title { margin: 0px 0px 2px; font-size: 0.86rem; font-weight:=
+ 600; letter-spacing: 0.2px; overflow-wrap: anywhere; }
+
+.ethio-summary-grid { display: grid; grid-template-columns: repeat(2, minma=
+x(0px, 1fr)); gap: 6px; margin-top: 2px; min-width: 0px; }
+
+.ethio-stat-box { background: rgba(255, 255, 255, 0.04); border: 1px solid =
+rgba(255, 255, 255, 0.08); border-radius: 9px; padding: 7px 9px; display: f=
+lex; flex-direction: column; gap: 2px; min-width: 0px; }
+
+.ethio-stat-label { font-size: 0.68rem; opacity: 0.8; overflow-wrap: anywhe=
+re; }
+
+.ethio-stat-val { font-size: 0.82rem; font-weight: 700; overflow-wrap: anyw=
+here; word-break: break-word; }
+
+.ethio-stat-val.highlight { color: rgb(245, 158, 11); }
+
+.secondary-result { margin-top: 0px; }
+------MultipartBoundary--u7XoE8FlI5BMde4Qx12UIYQDPCKS3TzRpIAV2CkLgt------
